@@ -1,7 +1,26 @@
-# Vue 3 + Vite
+# Vue 3 + Vite + Tailwind CSS
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## install dependencies
+```
+npm install
+```
+
+## starts a local web server for development
+```
+npm run dev
+```
+
+## builds the project, and outputs to the folder ./dist
+```
+npm run build
+```
+
+## start a local web server that serves the built solution from ./dist for previewing
+```
+npm run preview
+```
+
 
 ## Recommended IDE Setup
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+[VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar)  + [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
