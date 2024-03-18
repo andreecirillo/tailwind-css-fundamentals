@@ -1,13 +1,8 @@
 <template>
-    <section class="grid grid-cols-4 gap-2 grid-flow-dense">
+    <section class="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-4 grid-flow-dense">
         <div></div>
         <div></div>
-        <div class="flex items-center justify-around col-span-3">
-            <div class="w-16 !min-h-0 h-16 !bg-green-300"></div>
-            <div class="w-16 !min-h-0 h-16 !bg-blue-300"></div>
-            <div class="w-16 !min-h-0 h-16 !bg-green-300"></div>
-            <div class="w-16 !min-h-0 h-16 !bg-blue-300"></div>
-        </div>
+        <div></div>
         <div></div>
         <div></div>
         <div></div>
