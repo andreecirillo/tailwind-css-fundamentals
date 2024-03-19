@@ -1,8 +1,8 @@
 <script setup language="ts">
-import Grid from './components/Grid.vue';
+import Fonts from './components/Fonts.vue';
 </script>
 <template>
   <div class="m-10">
-    <Grid/>
+    <Fonts/>
   </div>
 </template>
