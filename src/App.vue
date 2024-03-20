@@ -1,10 +1,10 @@
-<script setup language="ts">
+<script setup lang="ts">
 import PricingCard from './components/PricingCard.vue';
 </script>
 <template>
   <h1 class="text-3xl font-bold text-center m-5">Choose the best plan for your company</h1>
   <h2 class="text-1xl text-center m-5">We are sure that one of them will fit your business best.</h2>
-  <div class="m-10 grid grid-cols-1 md:grid-cols-3 gap-5">
+  <div class="grid lg:grid-cols-3 md:grid-cols-2 max-w-6xl mx-auto gap-6 p-4">
     <PricingCard price="25" :features="[
       'Unlimited Access to All Features',
       '24/7 Customer Support',
