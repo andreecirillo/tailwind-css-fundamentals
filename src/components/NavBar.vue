@@ -1,25 +1,25 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const showMenu = ref(false)
-const showNav = ref(false)
+const showMenu = ref(false);
+const showNav = ref(false);
 
 const toggleMenu = () => {
-    showMenu.value = !showMenu.value
-}
+    showMenu.value = !showMenu.value;
+};
 
 const toggleNav = () => {
-    showNav.value = !showNav.value
-}
+    showNav.value = !showNav.value;
+};
 </script>
 <template>
-    <div class="bg-gray-700 flex flex-row justify-around p-5">
+    <div class="flex flex-row justify-around bg-gray-700 p-5">
         <div class="md:hidden">
             <button class="block" @click="toggleNav">
-                <img class="w-5 h-5" src="/src/assets/menu.png" />
+                <img class="h-5 w-5" src="/src/assets/menu.png" />
             </button>
             <div :class="showNav ? 'block' : 'hidden'"
-                class="bg-white mt-2 rounded-lg p-2 flex flex-col absolute left-1">
+                class="absolute left-1 mt-2 flex flex-col rounded-lg bg-white p-2">
                 <a class="menuItem" href="#">Dashboard</a>
                 <a class="menuItem" href="#">Team</a>
                 <a class="menuItem" href="#">Projects</a>
@@ -27,9 +27,9 @@ const toggleNav = () => {
             </div>
         </div>
         <div>
-            <img class="w-8 h-6" src="/src/assets/tailwind.png" />
+            <img class="h-6 w-8" src="/src/assets/tailwind.png" />
         </div>
-        <div class="ml-3 hidden md:flex flex-row">
+        <div class="ml-3 hidden flex-row md:flex">
             <a class="navItem" href="#">Dashboard</a>
             <a class="navItem" href="#">Team</a>
             <a class="navItem" href="#">Projects</a>
@@ -37,10 +37,10 @@ const toggleNav = () => {
         </div>
         <div>
             <button class="block" @click="toggleMenu">
-                <img class="w-10 h-10 rounded-full" src="/src/assets/user.jpg" />
+                <img class="h-10 w-10 rounded-full" src="/src/assets/user.jpg" />
             </button>
             <div :class="showMenu ? 'block' : 'hidden'"
-                class="bg-white mt-2 rounded-lg p-2 flex flex-col absolute right-1">
+                class="absolute right-1 mt-2 flex flex-col rounded-lg bg-white p-2">
                 <a class="menuItem" href="#">Your Profile</a>
                 <a class="menuItem" href="#">Settings</a>
                 <a class="menuItem" href="#">Sign Out</a>
@@ -50,10 +50,10 @@ const toggleNav = () => {
 </template>
 <style scoped>
 a.navItem {
-    @apply mr-5 p-2 text-white hover:bg-gray-600 hover:rounded-lg block;
+    @apply mr-5 block p-2 text-white hover:rounded-lg hover:bg-gray-600;
 }
 
 a.menuItem {
-    @apply p-1 text-black hover:bg-gray-100 hover:rounded-lg block;
+    @apply block p-1 text-black hover:rounded-lg hover:bg-gray-100;
 }
 </style>
