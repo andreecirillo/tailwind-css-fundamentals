@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import NavBar2 from './components/NavBar2.vue';
 import PricingCard2 from './components/PricingCard2.vue';
+import CartCheckout from './components/CartCheckout.vue';
 </script>
 <template>
   <div>
-    <NavBar2/>
+    <NavBar2 />
   </div>
   <div>
     <h1 class="text-3xl font-bold text-center m-5">Choose the best plan for your company</h1>
@@ -33,5 +34,8 @@ import PricingCard2 from './components/PricingCard2.vue';
       'In-Depth Training Materials',
       'Dedicated Account Manager'
     ]" name="Enterprise" description="Best for large scale uses and extended redistribution rights." />
+  </div>
+  <div class="max-w-4xl m-auto my-10">
+    <CartCheckout />
   </div>
 </template>
