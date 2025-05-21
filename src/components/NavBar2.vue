@@ -13,8 +13,8 @@ const mobileActive = ref(false);
             <span class="block h-[2px] bg-white w-full"></span>
             <span class="block h-[2px] bg-white w-full"></span>
         </button>
-            <img src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="TailwindUI"
-                class="w16 h-16 ml-3 mr-3" />
+            <img src="https://tailwindcss.com/_next/static/media/tailwindcss-mark.d52e9897.svg?color=indigo&shade=500" alt="TailwindUI"
+                class="w10 h-10 ml-3 mr-3" />
             <ul class="gap-1 top-full absolute flex flex-col sm:static sm:flex-row text-left left-0 bg-gray-800 w-full p-2"
                 v-if="mobileActive">
                 <li class="bg-gray-900 hover:bg-gray-500 px-2 py-1 rounded cursor:pointer text-gray-300">Dashboard</li>
